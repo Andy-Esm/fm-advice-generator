@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root {
+	/*Colors*/
+	--ligth-cyan: hsl(193, 38%, 86%);
+	--neon-green: hsl(150, 100%, 66%);
+	--hover: hsl(154, 82%, 78%);
+
+	--grayish-blue: hsl(217, 19%, 38%);
+	--dark-grauish-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+
+	--fs-main: 2.8rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.2%;
+}
+body {
+	font-family: 'Manrope', sans-serif;
+	font-size: var(--fs-main);
+	font-weight: 800;
+	background-color: var(--dark-blue);
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+img {
+	object-fit: contain;
+}
+.container {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	max-width: 144rem;
+	min-height: 100vh;
+	padding: 0 1.5rem;
+}
+.advice-block {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	gap: 1.4rem;
+	padding: 2rem;
+	text-align: center;
+	width: 100%;
+	max-width: 70rem;
+	min-height: 50vh;
+	background-color: var(--dark-grauish-blue);
+	border-radius: 1rem;
+}
+.advice-id {
+	color: var(--neon-green);
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+.advice-text {
+	color: var(--ligth-cyan);
+}
+.btn {
+	display: grid;
+	place-items: center;
+	position: absolute;
+	bottom: -2.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 5rem;
+	height: 5rem;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--neon-green);
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: var(--hover);
+}
+
+@media (max-width: 39rem) {
+	body {
+		font-size: 1.8rem;
+	}
+	.container {
+		padding: 0 1rem;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
