@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/Andy-Esm/fm-advice-generator)
-- Live Site URL: [Github pages](https://andy-esm.github.io/fm-order-summary-component-main/)
+- Live Site URL: [Github pages](https://andy-esm.github.io/fm-advice-generator/)
 
 ### Built with
 
