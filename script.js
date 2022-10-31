@@ -1,5 +1,5 @@
 const getAdvice = () => {
-	fetch('https://api.adviceslip.com/advice')
+	fetch('https://api.adviceslip.com/advice', {cache: 'no-cache'})
 		.then((response) => {
 			console.log(response, 'resolved');
 			return response.json();
